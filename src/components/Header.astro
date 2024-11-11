@@ -1,8 +1,11 @@
-<header class="max-w-[1440px] mx-auto p-8 flex justify-between items-center">
-    <img src="/logo.svg" alt="Logo InfoJobs" class="w-auto h-[30px]"/>
+--- 
+import Button from "./ui/Button.astro"
+---
 
-    <a  class="text-lg font-semibold bg-primary text-white rounded-full py-2 px-4" 
-        href="https://www.infojobs.net/candidate/candidate-login/candidate-login.xhtml">
-        Crea tu cuenta
-    </a>
+<header class="py-6 px-8 flex justify-between items-center md:max-w-[1400px] md:mx-auto">
+  <a href="/" aria-label="Regresar a la página de inicio"><img src="/logo.svg" alt="Logo InfoJobs" class="w-auto h-[30px]" /></a>
+
+  <Button variant="solid" color="primary" size="lg" radius="full" as="link" href="https://www.infojobs.net/candidate/candidate-login/candidate-login.xhtml">
+    Crea tu cuenta
+  </Button>
 </header>
